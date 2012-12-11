@@ -17,7 +17,7 @@ while($file = readdir($folder)){
 			$favicon = $file.'/favicon.ico';
 		}
 		$projectContents .= '<div class="span3">
-			<a href="#" class="project">
+			<a href="/'.$file.'" class="project">
 				<span class="favicon"><img src="'.$favicon.'"></span>
 				<img src="'.$screenshot.'">
 				<span class="overlay"><h1>'.$file.'</h1></span>
