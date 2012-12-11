@@ -1,8 +1,13 @@
 <?php
 
-$title     = "Wamp Home Page";
-$firstName = "Omar";
-$lastName  = "Berrayti";
+/**
+* Designed by Omar BERRAYTI
+* <berrayti.omar@gmail.com>
+**/
+
+$title     = "Wamp Home Page"; // The page title
+$firstName = "Omar";           // Your first name
+$lastName  = "Berrayti";       // Your last name
 
 $folder             = opendir('.');
 $projectContents    = '';
