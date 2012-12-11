@@ -20,6 +20,11 @@ Favicons
 
 The same thing as the screenshots, jus put a `favicon.png` or `favicon.ico` image in your project folder.
 
+User avatar
+-------------
+
+If you want to change the avatar in the top of the page, just replace the `avatar.png` image with your avatar, but keep in mind to keep the same name `avatar.png`
+
 Enjoy
 -------------
 
