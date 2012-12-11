@@ -1,0 +1,125 @@
+@import url(grid.css);
+
+/**
+* Main rules
+**/
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body{
+	background: #000 url(../img/bg.png);
+	font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 200;
+	text-shadow: 0 0 1px #FFF;
+	letter-spacing: 0.01em;
+	line-height: 24pt;
+}
+
+/**
+* Header rules
+**/
+.header{
+	margin: 50px 0;
+}
+.header .welcome{
+	font-size: 25pt;
+}
+.header .avatar small{
+	font-size: 15px;
+	float: right;
+}
+.header .avatar img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.header .avatar .name{
+	overflow: hidden;
+}
+
+
+/**
+* Projects rules
+**/
+.projects .project{
+	border: 5px solid #2D89EF;
+	width: 260px;
+	height: 200px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s easet;
+}
+.projects .project:after{
+	width: 0;
+	height: 0;
+	border-top: 40px solid #2D89EF;
+	border-left: 40px solid transparent;
+	position: absolute;
+	display: block;
+	right: 0;
+	content: "";
+	top: 0;
+}
+.projects .project:hover{
+	border-color: #BBB;
+}
+.projects .project:hover:after{
+	border-top-color: #BBB;
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	-ms-transition: all 3s ease;
+	transition: all 3s easet;
+}
+.projects .project .favicon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+}
+.projects .project .favicon img{
+	width: 16px;
+	height: 16px;
+}
+.projects .project .overlay{
+	position: absolute;
+	width: 240px;
+	height: 20px;
+	overflow: hidden;
+	background-color: #1e1e1e;
+	color: #fff;
+	font-size: 8pt;
+	text-align: left;
+	line-height: 12px;
+	padding: 5px 10px;
+	opacity: .8;
+	bottom: -55px;
+}
+.projects .project .overlay h1{
+	font-size: 20px;
+	line-height: 17px;
+}
+.projects .project:hover .overlay{
+	-webkit-transform: translate(0, -55px);
+	-ms-transform: translate(0, -55px);
+	-o-transform: translate(0, -55px);
+	-moz-transform: translate(0, -55px);
+	transform: translate(0, -55px);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s easet;
+}
