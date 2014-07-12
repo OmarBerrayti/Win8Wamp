@@ -24,7 +24,7 @@ while($file = readdir($folder)){
 		$projectContents .= '<div class="span3">
 			<a href="/'.$file.'" class="project">
 				<span class="favicon"><img src="'.$favicon.'"></span>
-				<img src="'.$screenshot.'">
+				<img src="'.$screenshot.'" style="width:260px;height:200px;">
 				<span class="overlay"><h1>'.$file.'</h1></span>
 			</a>
 		</div>';
